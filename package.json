@@ -1,5 +1,5 @@
 {
-  "name": "expo-news-app-starter",
+  "name": "newsapps",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
