@@ -9,13 +9,13 @@ type Props = {
 };
 
 const BreakingNews = (newsList: Props) => {
-  const [data, setData] = useState(newsList);
+  // const [data, setData] = useState(newsList);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>BreakingNews</Text>
       <View style={styles.slideWrapper}>
         <FlatList
-          data={data}
+          data={newsList}
           keyExtractor={(_, index) => `list_item ${index}`}
           renderItem={({ item, index }) => (
             <SliderItem slideItem={item} index={index} />

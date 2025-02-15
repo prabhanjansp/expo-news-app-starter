@@ -8,6 +8,7 @@ type Props = {
 const { width } = Dimensions.get("screen");
 
 const SliderItem = ({ slideItem, index }: Props) => {
+  console.log("Rendering item:", slideItem);
   return (
     <View style={styles.itemWrapper}>
       <Image source={{ uri: slideItem.image_url }} style={styles.image} />
@@ -31,3 +32,4 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 });
+
